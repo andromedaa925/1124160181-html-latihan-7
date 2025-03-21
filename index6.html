@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Striped Table - tr,th & td</title>
+</head>
+<body>
+    <style>
+        th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        tr:nth-child(even),
+        th:nth-child(even),
+        td:nth-child(even) {
+            background-color: #D6EEEE;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Striped Table</h2>
+    <p>Untuk tabel bergaris zebra, gunakan pemilih nth-child() dan tambahkan warna latar belakang ke semua baris tabel genap (atau ganjil):</p>
+
+    <table style="width: 100%">
+        <tr>
+            <th>MON</th>
+            <th>TUE</th>
+            <th>WED</th>
+            <th>THU</th>
+            <th>FRI</th>
+            <th>SAT</th>
+            <th>SUN</th>
+        </tr>
+        <tr>
+            <td>Arya</td>
+            <td>Bila</td>
+            <td>Alfin</td>
+            <td>Putri</td>
+            <td>Richy</td>
+            <td>Faisal</td>
+            <td>Lala</td>
+        </tr>
+        <tr>
+            <td>Zahran</td>
+            <td>Angga</td>
+            <td>Ima</td>
+            <td>Dika</td>
+            <td>Eza</td>
+            <td>Nupus</td>
+            <td>Tanisa</td>
+        </tr>
+        <tr>
+            <td>Aldo</td>
+            <td>Hendra</td>
+            <td>Selva</td>
+            <td>Vian</td>
+            <td>Kayla</td>
+            <td>Ghina</td>
+            <td>Dinda</td>
+        </tr>
+    </table>
+</body>
+</html>
